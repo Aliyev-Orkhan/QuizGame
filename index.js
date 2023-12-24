@@ -16,11 +16,6 @@ const questions = [
         correctAnswer: '1985',
     },
     {
-        question: '2-ci Dünya müharibəsi hansı ildə başa çatmışdır?',
-        answers: ['1945', '1939', '1941', '1950'],
-        correctAnswer: '1945',
-    },
-    {
         question: '"Romeo və Juliet" əsərini kim yazmışdır?',
         answers: ['Çarlz Dikkens', 'Ceyn Osten', 'Uilyam Şekspir', 'Mark Tven'],
         correctAnswer: 'Uilyam Şekspir',
@@ -63,7 +58,7 @@ function updateQuestion() {
     } else {
 
         qTitleElement.textContent = 'Oyun Bitdi';
-        btnGroupElement.innerHTML = `<p class="text-white">Sizin Topladığınız Xal: ${userPoints * 10}</p>`;
+        btnGroupElement.innerHTML = `<p class="text-white">Sizin Topladığınız Xal: ${userPoints * 20}</p>`;
     }
 }
 
@@ -83,7 +78,7 @@ function checkAnswer(selectedAnswer) {
     progressLineElement.style.width = `${progressPercentage}%`;
 
 
-    pointDisplayElement.textContent = `Xal: ${userPoints * 10}`;
+    pointDisplayElement.textContent = `Xal: ${userPoints * 20}`;
 
 
     updateQuestion();
